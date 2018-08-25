@@ -38,9 +38,10 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat @click="show = !show" color="orange">Info</v-btn>
+            <!-- <v-btn flat @click="show = !show" color="orange">Info</v-btn> -->
+            <v-btn flat @click="showMore(index)" color="orange">Info</v-btn>
             <v-spacer></v-spacer>
-            <v-btn @click="alert" icon>
+            <v-btn @click="showMore" icon>
               <v-icon>favorite</v-icon>
             </v-btn>
             <v-btn icon>
@@ -54,7 +55,7 @@
             </v-btn>
           </v-card-actions>
           <v-slide-y-transition>
-            <v-card-text v-if="show">
+            <v-card-text ref="index" v-if="show">
               <span>It is high-grade paper, 200g. Size: 127*186mm. </span><br>
               ​<span class="grey--text">
                 Available colours: white / dark blue / white / beige / black / see color board
@@ -78,8 +79,9 @@
 <script>
   export default {
     methods: {
-      alert: function(event) {
-        console.log('clicked')
+      showMore: function(index){
+        this.show = !this.show
+        console.log('clicked ' + index)
       }
     },
     data: () => ({
