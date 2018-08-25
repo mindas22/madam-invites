@@ -10,6 +10,7 @@
         v-for="(card, index) in cards"
         v-bind="{ [`lg${card.flex}`]: true }"
         :key="card.id"
+        :class="{ selected: card.clicked }" @click="showMore(card.clicked)"
       >
         <v-card hover>
           <v-card-media
@@ -79,12 +80,17 @@
 <script>
   export default {
     methods: {
-      showMore: function(index){
+      showMore: function(clicked){
         this.show = !this.show
-        console.log('clicked ' + index)
+        this.clicked = !this.clicked
+      },
+      toggle: function (clicked) {
+        clicked = !clicked
+        this.show = !this.show
       }
     },
     data: () => ({
+      clicked: false,
       show: false,
       cards: [
         {
@@ -117,30 +123,6 @@
           flex: 4,
           description: 'Wedding invitations card laser cut. With inner sheet and envelope.',
         },
-        {
-          title: 'Favorite road trips',
-          src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg',
-          flex: 4,
-          description: 'Wedding invitations card laser cut. With inner sheet and envelope.',
-        },
-        {
-          title: 'Favorite road trips',
-          src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg',
-          flex: 4,
-          description: 'Wedding invitations card laser cut. With inner sheet and envelope.',
-        },
-        {
-          title: 'Best airlines',
-          src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
-          flex: 4,
-          description: 'Wedding invitations card laser cut. With inner sheet and envelope.',
-        },
-        {
-          title: 'Best airlines',
-          src: "`https://unsplash.it/300/300?image=${Math.floor(Math.random() * 100) + 1}`",
-          flex: 4,
-          description: 'Wedding invitations card laser cut. With inner sheet and envelope.',
-        }
       ]
     })
   }

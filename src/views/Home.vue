@@ -180,7 +180,7 @@
               Made with
               <v-icon class="red--text">favorite</v-icon>
               by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
+              and <a class="white--text" href="https://github.com/mindas22">Mindaugas Lickus</a>
             </div>
           </v-flex>
         </v-layout>
@@ -189,12 +189,11 @@
 </template>
 
 <script>
-import Gallery from '@/components/Gallery.vue';
+// import Gallery from '@/components/Gallery.vue';
 import GalleryAuto from '@/components/GalleryAuto.vue';
 
 export default {
   components: {
-    Gallery,
     GalleryAuto,
   },
 };
