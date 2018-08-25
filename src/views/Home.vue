@@ -23,9 +23,9 @@
         </v-parallax>
       </section>
 
-      <section>
+      <!-- <section>
         <Gallery />
-      </section>
+      </section> -->
 
       <section>
         <GalleryAuto />

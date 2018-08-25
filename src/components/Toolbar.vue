@@ -1,6 +1,9 @@
 <template>
   <v-toolbar class="white">
-    <v-toolbar-title>Madam Zizi</v-toolbar-title>
+    <v-toolbar-title>
+      <v-icon>card_giftcard</v-icon>
+      Madam Invites
+    </v-toolbar-title>
   </v-toolbar>
 </template>
 
