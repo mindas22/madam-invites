@@ -7,7 +7,7 @@
     align-center
   >
     <v-flex xs12 sm6 lg4>
-      <v-card class="mr-2">
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"
@@ -35,7 +35,7 @@
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 lg4>
-      <v-card class="mr-2">
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"
@@ -63,7 +63,7 @@
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 lg4 >
-      <v-card>
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"
@@ -91,7 +91,7 @@
       </v-card>
     </v-flex>
         <v-flex xs12 sm6 lg4>
-      <v-card class="mr-2">
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"
@@ -119,7 +119,7 @@
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 lg4>
-      <v-card class="mr-2">
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"
@@ -146,8 +146,8 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm6 lg4 >
-      <v-card>
+    <v-flex xs12 sm6 lg4>
+      <v-card class="mr-2 mt-2">
         <v-card-media
           class="black--text"
           height="250px"

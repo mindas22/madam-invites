@@ -1,7 +1,7 @@
 <template>
 <v-content>
       <section>
-        <v-parallax src="assets/hero.jpg" height="650">
+        <v-parallax src="assets/hero.jpg" height="600">
           <v-layout
             column
             align-center
@@ -27,7 +27,9 @@
         <Gallery />
       </section>
 
-
+      <section>
+        <GalleryAuto />
+      </section>
 
 
       <section>
@@ -188,10 +190,12 @@
 
 <script>
 import Gallery from '@/components/Gallery.vue';
+import GalleryAuto from '@/components/GalleryAuto.vue';
 
 export default {
   components: {
     Gallery,
+    GalleryAuto,
   },
 };
 </script>
